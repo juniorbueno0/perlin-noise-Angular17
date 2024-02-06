@@ -1,0 +1,16 @@
+<div class="flex bg-black w-screen h-screen text-green-400 justify-center items-center">
+    <div class="flex  bg-white w-[400px] h-[400px] flex-wrap">
+        @for(item of noiseArray.slice(0, 399); track item; let idx = $index){
+            @if(item<=.1){ <div class="h-[20px] w-[20px] bg-gray-100"></div> }
+            @if(item>.1 && item<=.2){ <div class="h-[20px] w-[20px] bg-gray-200"></div>}
+            @if(item>.2 && item<=.3){ <div class="h-[20px] w-[20px] bg-gray-300"></div> }
+            @if(item>.3 && item<=.4){ <div class="h-[20px] w-[20px] bg-gray-400"></div> }
+            @if(item>.4 && item<=.5){ <div class="h-[20px] w-[20px] bg-gray-500"></div> }
+            @if(item>.5 && item<=.6){ <div class="h-[20px] w-[20px] bg-gray-600"></div> }
+            @if(item>.6 && item<=.7){ <div class="h-[20px] w-[20px] bg-gray-700"></div> }
+            @if(item>.7 && item<=.8){ <div class="h-[20px] w-[20px] bg-gray-800"></div> }
+            @if(item>.8 && item<=.9 ){ <div class="h-[20px] w-[20px] bg-gray-900"></div> }
+            @if(item>.9){ <div class="h-[20px] w-[20px] bg-gray-950"></div> }
+        }
+    </div>
+</div>
